@@ -1,0 +1,2 @@
+class BonplanController < ApplicationController
+end
