@@ -1,9 +1,11 @@
-<div class="ui container">
-	<div class="ui secondary menu">
-	  <a class="item">
-	    Home
-	  </a>
-	  
+<!--Header-->
+<div class="container" style="width:100%">
+
+	<div class="ui secondary menu" style="background-color:#FECC6C;height:55px">
+	  <div class="ui text container center aligned" style="width:450px">
+		  <a class="item">
+		    Bonap
+		  </a>
 	    <div class="item">
 	      <div class="ui icon input">
 	        <input type="text" placeholder="Search...">
@@ -14,7 +16,9 @@
 		    <a class="ui item">
 		      <i class="sidebar icon"></i>
 		    </a>
-	    </div>  
+
+	    </div> 
+	  </div> 
 	</div>
 </div>
 
@@ -24,75 +28,182 @@
 
 
 <!--EMOJI-->
-	<div class="ui centered large segment">
-	  <i class="ui center aligned smile icon"></i>
-	 </div>
+	<div class="ui center aligned text container">
+	  
+	  <h1 >😁😬</h1>
+	</div>
 		
 
 <!--TITLE-->
 <div class="ui text container center aligned">
-	<h1 class="ui header">House of tarts</h1>
+	<h1 class="ui header" style='color:grey; font-weight:100'>House of tarts</h1>
 </div>
 
 
 
 <!--STATS-->
-<div class="ui statistic center aligned grid">
+
+<div class="ui text container center aligned">
+	<i class="plane icon" ></i> 5 
+	<i class="plane icon" ></i> 5 
+</div>
+
+
+<div style="width:400px;background-color:gray;margin:auto">
   <div class="value">
     <i class="plane icon"></i> 5 <i class="plane icon"></i> 5
   </div>    
 </div>
 
-<div class="ui grid container">  
-  <div class="two wide column">four wide column</div>
-  <div class="two wide column">four wide column</div>
-  <div class="two wide column">four wide column</div>
-  <div class="two wide column">four wide column</div>
-  <div class="two wide column">four wide column</div>
-  <div class="two wide column">four wide column</div>
-  <div class="two wide column">four wide column</div>
-  <div class="two wide column">four wide column</div>
-</div>
 
 
 
-<div class="ui two column centered grid">
-  <div class="column">oijicjijcijsijcisjcisjcsojscsjcoj</div>
-  <div class="four column centered row">
-    <div class="column">ocskocksokcoskcokcoskoskcok</div>
-    <div class="column">cksocksokcoskcokockscokoksco</div>
+<!--test stackable-->
+<div class="ui two column stackable grid container">
+  <div class="column center aligned">
+    <img class="ui centered large image" src="http://www.highviewart.com/uploads/cache/645x0x0/articles_gallery/1882/7_1403820393.jpg">
+  </div>
+
+  <div class="column center aligned">
+  	<div class="">
+	  	<h1 >😁😬</h1>
+		</div>	
+  	<div class="">
+			<h1 class="ui header" style='color:grey; font-weight:100'>House of tarts</h1>
+		</div>
+		<div>
+		  <div class="ui celled list">
+		    <div class="item">
+					<i class="certificate icon"></i>
+					<div class="content">
+						Resto
+					</div>
+				</div>
+				<div class="item">
+					<i class="certificate icon"></i>
+					<div class="content">
+						Asiatique
+					</div>
+				</div>
+				<div class="item">
+					<i class="certificate icon"></i>
+					<div class="content">
+						Omnivore
+					</div>
+				</div>
+				<div class="item">
+					<i class="certificate icon"></i>
+					<div class="content">
+						Petite faim
+					</div>
+				</div>
+			</div>
+			<div class="ui list">
+				<div>
+					<i class="big heart icon"></i>
+				</div>
+				<i class="big heart icon"></i>
+				<i class="big heart icon"></i>
+			</div>
+		</div>
+  </div>
+
+<div class="ui dropdown">
+  <div class="text">File</div>
+  <i class="dropdown icon"></i>
+  <div class="menu">
+    <div class="item">New</div>
+    <div class="item">
+      <span class="description">ctrl + o</span>
+      Open...
+    </div>
+    <div class="item">
+      <span class="description">ctrl + s</span>
+      Save as...
+    </div>
+    <div class="item">
+      <span class="description">ctrl + r</span>
+      Rename
+    </div>
+    <div class="item">Make a copy</div>
+    <div class="item">
+      <i class="folder icon"></i>
+      Move to folder
+    </div>
+    <div class="item">
+      <i class="trash icon"></i>
+      Move to trash
+    </div>
+    <div class="divider"></div>
+    <div class="item">Download As...</div>
+    <div class="item">
+      <i class="dropdown icon"></i>
+      Publish To Web
+      <div class="menu">
+        <div class="item">Google Docs</div>
+        <div class="item">Google Drive</div>
+        <div class="item">Dropbox</div>
+        <div class="item">Adobe Creative Cloud</div>
+        <div class="item">Private FTP</div>
+        <div class="item">Another Service...</div>
+      </div>
+    </div>
+    <div class="item">E-mail Collaborators</div>
   </div>
 </div>
 
 
 
+</div>
 
 
 
-<!--tests-->
-   <div class="ui text container">
-     <div class="ui segment">Content</div>
-     <div class="ui segment">Content</div>
-     <div class="ui segment">Content</div>
-   </div>
-   
+
  
 
 <!--MAPS-->
-<div id="map" style="width:100%;height:400px"></div>
+<div id="map" style="margin:auto;max-width:800px;height:450px;box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4)"></div>
 
 <script>
 function myMap() {
   var myCenter = new google.maps.LatLng(48.8305229,2.374795899999981);
   var mapCanvas = document.getElementById("map");
-  var mapOptions = {center: myCenter, zoom: 15};
+  var mapOptions = {center: myCenter, zoom: 16};
   var map = new google.maps.Map(mapCanvas, mapOptions);
   var marker = new google.maps.Marker({position:myCenter});
   marker.setMap(map);
+
+// Responsive Map : Center the marker according the dimensions of the map window
+google.maps.event.addDomListener(window, "resize", function() {
+   var center = map.getCenter();
+   google.maps.event.trigger(map, "resize");
+   map.setCenter(center); 
+});
 }
 </script>
 
 <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDj5DFWGBgTDMFs9WE3ihS-PCKF6hkacmk&callback=myMap"></script>
+
+
+
+
+<!--bouton "j'y vais!"-->
+<div class="" style="width:150px;height:50px;background-color:#FECC6C;border-radius: 0px 0px 15px 15px;margin: auto;padding:15px;box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4)">
+		<h3 style="text-align:center;color:white;">J'y vais!</h3>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -190,54 +301,26 @@ function myMap() {
 
 
 
+<!--POP-UP-->
 
-<div class="ui icon button" data-content="The default theme's basic popup removes the pointing arrow." data-variation="basic">
+
+
+
+
+
+<div class="ui icon button" data-tooltip="The default theme's basic popup removes the pointing arrow." data-variation="basic">
   <i class="add icon"></i>
 </div>
-<!--DROPDOWN-->
-<div class="ui dropdown">
-  <div class="text">File</div>
-  <i class="dropdown icon"></i>
-  <div class="menu">
-    <div class="item">New</div>
-    <div class="item">
-      <span class="description">ctrl + o</span>
-      Open...
-    </div>
-    <div class="item">
-      <span class="description">ctrl + s</span>
-      Save as...
-    </div>
-    <div class="item">
-      <span class="description">ctrl + r</span>
-      Rename
-    </div>
-    <div class="item">Make a copy</div>
-    <div class="item">
-      <i class="folder icon"></i>
-      Move to folder
-    </div>
-    <div class="item">
-      <i class="trash icon"></i>
-      Move to trash
-    </div>
-    <div class="divider"></div>
-    <div class="item">Download As...</div>
-    <div class="item">
-      <i class="dropdown icon"></i>
-      Publish To Web
-      <div class="menu">
-        <div class="item">Google Docs</div>
-        <div class="item">Google Drive</div>
-        <div class="item">Dropbox</div>
-        <div class="item">Adobe Creative Cloud</div>
-        <div class="item">Private FTP</div>
-        <div class="item">Another Service...</div>
-      </div>
-    </div>
-    <div class="item">E-mail Collaborators</div>
-  </div>
+
+<div class="ui icon button" data-tooltip="Add users to your feed">
+  <i class="add icon"></i>
 </div>
+
+
+<div class="ui button" data-tooltip="Add users to your feed" data-position="top right">
+  Top Left
+</div>
+
 
 
 

@@ -10,6 +10,7 @@ end
 gem 'rails', '~> 5.1.3'
 
 gem 'jquery-rails'
+gem 'semantic-ui-sass', git: 'https://github.com/doabit/semantic-ui-sass.git'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
