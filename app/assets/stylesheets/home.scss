@@ -1,3 +1,28 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@media all and (max-device-width: 480px)
+{
+
+	.header{
+		width: auto;
+		height: 200px;
+		position:fixed;
+		z-index:1;
+		background-color: red;
+
+	}
+
+
+
+  .container{
+  	width: auto;
+  }
+}
+
+
+@media all and (min-device-width: 481px){
+	.header{
+
+	}
+}

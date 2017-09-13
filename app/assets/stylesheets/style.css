@@ -1,0 +1,26 @@
+@media all and (max-device-width: 480px)
+{
+	.header{
+		width: auto;
+		height: 200px;
+		position:fixed;
+		z-index:1;
+		background-color: red;
+	}
+
+	.ui .secondary .menu {
+			height:200px;
+			background-color:#FECC6C;
+		}
+}
+
+
+
+
+
+
+@media all and (min-device-width: 481px){
+	.header{
+
+	}
+}
